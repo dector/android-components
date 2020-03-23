@@ -16,6 +16,7 @@ import org.jetbrains.kotlin.psi.KtFile
 /**
  * Check header license in Kotlin files.
  */
+@Deprecated("Use `comments.AbsentOrWrongFileLicense` rule from detekt 1.7.0")
 class ProjectLicenseRule(config: Config = Config.empty) : Rule(config) {
 
     private val expectedLicense = """

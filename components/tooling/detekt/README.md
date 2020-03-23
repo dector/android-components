@@ -20,7 +20,7 @@ dependencies {
 
 Section `mozilla-rules`:
 
-  - `AbsentOrWrongFileLicense` - check for correct license header in Kotlin files.
+  - (Deprecated) <s>`AbsentOrWrongFileLicense` - check for correct license header in Kotlin files</s>. Use [`comments.AbsentOrWrongFileLicense`](https://arturbosch.github.io/detekt/comments.html#absentorwrongfilelicense) from detekt 1.7.0.
 
 ## License
 

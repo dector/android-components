@@ -12,6 +12,9 @@ permalink: /changelog/
 * [Gecko](https://github.com/mozilla-mobile/android-components/blob/master/buildSrc/src/main/java/Gecko.kt)
 * [Configuration](https://github.com/mozilla-mobile/android-components/blob/master/buildSrc/src/main/java/Config.kt)
 
+* **tooling-detekt**
+  * `AbsentOrWrongFileLicense` detekt rule is deprecated. Use [`comments.AbsentOrWrongFileLicense`](https://arturbosch.github.io/detekt/comments.html#absentorwrongfilelicense) from detekt 1.7.0.
+
 * **lib-state**, **browser-state**
   * Added the ability to add `Middleware` instances to a `Store`. A `Middleware` can rewrite or intercept an `Action`, as well as dispatch additional `Action`s or perform side-effects when an `Action` gets dispatched.
 

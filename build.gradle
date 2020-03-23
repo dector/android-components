@@ -242,10 +242,6 @@ detekt {
 }
 
 tasks.withType(io.gitlab.arturbosch.detekt.Detekt) {
-    // Custom detekt rules should be build before
-    // See https://arturbosch.github.io/detekt/extensions.html#pitfalls
-    dependsOn(":tooling-detekt:assemble")
-
     autoCorrect = true
 
     exclude "**/src/androidTest/**"
@@ -276,7 +272,6 @@ configurations {
 
 dependencies {
     ktlint "com.github.shyiko:ktlint:0.31.0"
-    detektPlugins project(":tooling-detekt")
 }
 
 task ktlint(type: JavaExec, group: "verification") {
